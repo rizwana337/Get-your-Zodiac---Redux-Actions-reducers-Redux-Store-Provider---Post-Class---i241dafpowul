@@ -1,11 +1,5 @@
-//code here
-import { createStore, combineReducers } from "redux";
-import tellZodiac from "./zodiac";
+import { createStore } from "redux"
+import rootReducer from "../src/reducers/index"
+const store=createStore(rootReducer)
 
-const rootReducer = combineReducers({
-  tellZodiac,
-});
-
-const store = createStore(rootReducer);
-
-export default store;
+export default store
